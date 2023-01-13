@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import SearchBar from './Components/SearchBar';
 import ItemsDisplay from './Components/ItemsDisplay';
@@ -39,7 +39,7 @@ function App() {
         setFilters(searchParams);
     };
 
-    const deleteItem = (item) => {
+    const deleteItem = useCallback (  (item) => {
         const items = data["items"];
         const requestOptions = {
             method: "DELETE"
@@ -54,7 +54,7 @@ function App() {
                     setData({ items });
                 }
             })
-    }
+    }, [data] );
 
     const addItemToData = (item) => {
         const requestOptions = {
