@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "max",
+      "price": "30",
+      "type": "human",
+      "brand": "english",
+      "id": 1
+    },
+    {
+      "name": "potato",
+      "price": "3",
+      "type": "carbs",
+      "brand": "fairprice",
+      "id": 2
+    },
+    {
+      "name": "bag",
+      "price": "230",
+      "type": "accessories",
+      "brand": "gucci",
+      "id": 3
+    },
+    {
+      "name": "a",
+      "price": 123,
+      "type": "afds",
+      "brand": "asdf",
+      "id": 4
+    }
+  ]
+}
